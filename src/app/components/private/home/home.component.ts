@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnChanges, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +7,19 @@ import { Component } from '@angular/core';
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
-export class HomeComponent {
+export class HomeComponent implements OnChanges {
+  constructor(){}
 
+  ngOnChanges(): void {
+    // debugger
+    // let menuIcon = document.getElementById('menu-icon') as HTMLElement;
+    // let navbar = document.getElementById('.navbar') as HTMLElement;
+
+    // menuIcon.onclick = () => {
+    //     menuIcon.classList.toggle('bx-x');
+    //     navbar.classList.toggle('active');
+    // };
+
+
+  }
 }
